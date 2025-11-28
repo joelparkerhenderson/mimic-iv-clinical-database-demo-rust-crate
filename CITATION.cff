@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: MIMIC-IV Clinical Database Demo Rust crate
+message: >-
+  If you use this work and you want to cite it,
+  then you can use the metadata from this file.
+type: software
+authors:
+  - given-names: Joel Parker
+    family-names: Henderson
+    email: joel@joelparkerhenderson.com
+    affiliation: joelparkerhenderson.com
+    orcid: 'https://orcid.org/0009-0000-4681-282X'
+identifiers:
+  - type: url
+    value: 'https://github.com/joelparkerhednerson/mimic-iv-clinical-database-demo-rust-crate/'
+    description: MIMIC-IV Clinical Database Demo Rust crate
+repository-code: 'https://github.com/joelparkerhednerson/mimic-iv-clinical-database-demo-rust-crate/'
+abstract: >-
+  MIMIC-IV Clinical Database Demo Rust crate
+license: See license file

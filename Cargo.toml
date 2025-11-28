@@ -1,0 +1,20 @@
+[package]
+name = "mimic-iv-clinical-database-demo-rust-crate"
+version = "0.1.0"
+edition = "2024"
+authors = ["Joel Parker Henderson <joel@joelparkerhenderson.com>"]
+description = "MIMIC-IV: The Medical Information Mart for Intensive Care (MIMIC-IV) dataset contains data for over 200,000 patients admitted to the emergency department of a major urban hospital, in addition to over 65,000 ICU patients. It incorporates contemporary data and is a widely used resource in healthcare research. This Rust crate is a work in progress for research and development, for demo purposes only, not for production use. This Rust crate provides Rust structures to serialize and deserialized the MIMIC demo files."
+readme = "README.md"
+repository = "https://github.com/joelparkerhenderson/mimic-iv-clinical-database-demo-rust-crate/"
+license = "MIT OR Apache-2.0 OR GPL-2.0 OR GPL-3.0 OR BSD-3-Clause"
+keywords = ["mimic", "clinical", "database", "medical"]
+categories = ["api-bindings", "data-structures", "science"]
+include = ["src/**/*", "LICENSE.md", "README.md", "llms.txt", "llms.json"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1.0"
+csv = "1.3"
+chrono = { version = "0.4", features = ["serde"] }
+
+[profile.dev]
