@@ -1,0 +1,40 @@
+//! EMAR Detail
+
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct EmarDetail {
+    pub subject_id: Option<i64>,
+    pub emar_id: Option<String>,
+    pub emar_seq: Option<i64>,
+    pub parent_field_ordinal: Option<f64>,
+    pub administration_type: Option<String>,
+    pub pharmacy_id: Option<i64>,
+    pub barcode_type: Option<String>,
+    pub reason_for_no_barcode: Option<String>,
+    pub complete_dose_not_given: Option<String>,
+    pub dose_due: Option<String>,
+    pub dose_due_unit: Option<String>,
+    pub dose_given: Option<String>,
+    pub dose_given_unit: Option<String>,
+    pub will_remainder_of_dose_be_given: Option<String>,
+    pub product_amount_given: Option<String>,
+    pub product_unit: Option<String>,
+    pub product_code: Option<String>,
+    pub product_description: Option<String>,
+    pub product_description_other: Option<String>,
+    pub prior_infusion_rate: Option<String>,
+    pub infusion_rate: Option<String>,
+    pub infusion_rate_adjustment: Option<String>,
+    pub infusion_rate_adjustment_amount: Option<String>,
+    pub infusion_rate_unit: Option<String>,
+    pub route: Option<String>,
+    pub infusion_complete: Option<String>,
+    pub completion_interval: Option<String>,
+    pub new_iv_bag_hung: Option<String>,
+    pub continued_infusion_in_other_location: Option<String>,
+    pub restart_interval: Option<String>,
+    pub side: Option<String>,
+    pub site: Option<String>,
+    pub non_formulary_visual_verification: Option<String>,
+}
